@@ -12,6 +12,7 @@ class GameBoard:
                  ) -> None:
         self.rows = rows
         self.columns = columns
+        self.terrain: list[int] = []
 
     def row_count(self):
         return self.rows
@@ -30,3 +31,6 @@ class GameBoard:
 
     def init_characters(self, characters):
         self.characters = characters
+
+    def get_terrain(self, row, col) -> int:
+        return self.terrain[row * self.columns + col]
