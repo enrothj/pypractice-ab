@@ -1,4 +1,4 @@
-from character import Character
+import entities
 
 class GameBoard:
     """
