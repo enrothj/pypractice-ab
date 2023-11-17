@@ -1,4 +1,4 @@
-class Obstacle:
+class Terrain:
     def __init__(self, type: int) -> None:
         self.type = type
 
